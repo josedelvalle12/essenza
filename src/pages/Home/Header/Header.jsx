@@ -23,7 +23,7 @@ function Header() {
             </div>
             
             <div className="relative z-10 flex items-center justify-center h-full text-center">
-                <h1 className="font-roboto(Almarai) text-white font-normal text-6xl">
+                <h1 className="font-almarai text-white font-normal text-6xl">
                     Fragrance for people who want <span className="font-light italic">more style</span> and <span className="font-light italic">mood reflection.</span>
                 </h1>
             </div>

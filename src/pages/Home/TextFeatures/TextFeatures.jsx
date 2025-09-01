@@ -19,7 +19,7 @@ function TextFeatures() {
                 key={index}
                 className="flex items-center mx-10"
             >
-                <p className="font-roboto(Poppins) text-white font-semibold text-2xl">
+                <p className="font-poppins text-white font-semibold text-2xl">
                 {text}
                 </p>
                 <SpaIcon className="mx-4 text-white" />
@@ -31,7 +31,7 @@ function TextFeatures() {
                 key={`dup-${index}`}
                 className="flex items-center mx-10"
             >
-                <p className="font-roboto(Poppins) text-white font-semibold text-2xl">
+                <p className="font-poppins text-white font-semibold text-2xl">
                 {text}
                 </p>
                 <SpaIcon className="mx-4 text-white" />
