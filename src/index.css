@@ -13,10 +13,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @theme {
-    --font-roboto: "Poppins", sans-serif;
-    --font-roboto: "Almarai", sans-serif;
-    --font-roboto: "Akshar", sans-serif;
-    --font-roboto: "Montserrat";
+    --font-poppins: "Poppins", sans-serif;
+    --font-almarai: "Almarai", sans-serif;
+    --font-akshar: "Akshar", sans-serif;
+    --font-montserrat: "Montserrat";
+}
+
+.font-almarai {
+  font-family: var(--font-almarai);
+}
+
+.font-montserrat {
+  font-family: var(--font-montserrat);
+}
+
+.font-poppins {
+  font-family: var(--font-poppins);
 }
 
 @keyframes marquee {
@@ -29,3 +41,11 @@
     animation: marquee 20s linear infinite;
 }
 
+/* Tailwind Plugin scrollbar-hide */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
