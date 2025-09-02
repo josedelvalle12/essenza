@@ -1,5 +1,5 @@
 import React from "react";
-import PerfumeScene from '../../../components/PerfumeScene';
+import PerfumeScene from './PerfumeScene';
 import SpaIcon from "@mui/icons-material/Spa";
 import TrendingFlatIcon from '@mui/icons-material/TrendingFlat';
 
