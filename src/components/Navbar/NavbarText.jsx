@@ -1,12 +1,20 @@
-function NavbarText() {
+import { Link } from "react-router-rom";
+function NavbarText({ onBestSellersEnter, onBestSellersLeave }) {
     return (
-        <div className='flex w-3xl place-content-evenly'>
-            <button className='font-roboto(Poppins) text-white text-base font-normal hover:underline'>Home</button>
-            <button className='font-roboto(Poppins) text-white text-base font-normal hover:underline'>Benefits</button>
-            <button className='font-roboto(Poppins) text-white text-base font-normal hover:underline'>Trending</button>
-            <button className='font-roboto(Poppins) text-white text-base font-normal hover:underline'>Best Sellers</button>
-            <button className='font-roboto(Poppins) text-white text-base font-normal hover:underline'>Shop</button>
-        </div>
+        <nav className='flex w-3xl justify-evenly'>
+            <link to="/" className='font-poppins text-white text-base font-normal hover:underline'>Home</link>
+            <link to="/" className='font-poppins text-white text-base font-normal hover:underline'>Benefits</link>
+            <link to="/" className='font-poppins text-white text-base font-normal hover:underline'>Trending</link>
+
+            <span 
+            onMouseEnter={onBestSellersEnter} 
+            onMouseLeave={onBestSellersLeave} 
+            className="font-poppins text-white text-base font-normal cursor-pointer hover:underline">
+            Best Sellers
+            </span>
+
+            <link to="/shop" className='font-poppins text-white text-base font-normal hover:underline'>Shop</link>
+        </nav>
     )
 }
 

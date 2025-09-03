@@ -1,16 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import SearchIcon from '@mui/icons-material/Search';
 import NavbarText from './NavbarText';
 
 function Navbar() {
-    return (
-        <nav className="absolute mx-auto p-8 flex w-full items-center place-content-between z-50">
-            <div className='text-white flex-initial font-roboto(Montserrat) font-normal text-4xl'>Essenza</div>
+    const [isBestSellersOpen, setIsBestSellersOpen] = useState(false);
 
-            <NavbarText></NavbarText>
+    return (
+        <nav className="fixed top-0 left-0 w-full mx-auto p-8 py-6 flex items-center justify-between z-50">
+            <div className='text-white flex-initial font-montserrat font-normal text-4xl'>Essenza</div>
+            
+            <NavbarText 
+            onBestSellersEnter={() => setIsBestSellersOpen(true)}
+            onBestSellersLeave={() => setIsBestSellersOpen(false)}></NavbarText>
+
+            <div className='relative'>
+                <BestSellers isOpen={isBestSellersOpen}></BestSellers>
+            </div>
+
         
-            <div className='flex w-40 place-content-around'>
+            <div className='flex w-40 justify-around'>
                 <button className="text-white">
                     <SearchIcon></SearchIcon>
                 </button>
