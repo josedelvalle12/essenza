@@ -1,10 +1,8 @@
 import React from "react";
-import Navbar from "../Navbar/Navbar";
 
 function Header() {
     return (
-        <div className="relative bg-gray-950 h-screen w-full">
-                <Navbar></Navbar>
+        <div className="relative h-[90vh] w-full bg-gray-950 bg-cover bg-center">
 
             <div className="absolute inset-0">
                 <img
@@ -14,12 +12,12 @@ function Header() {
             </div>
             <div className="absolute inset-0">
                 <video
-                src="/Efecto HUMO para tus videos.mp4"
+                src="/humo.mp4"
                 autoPlay
                 muted
                 loop
                 playsInline
-                className="w-full h-full object-cover opacity-80 mix-blend-screen"></video>
+                className="w-full h-full object-cover opacity-20 mix-blend-screen"></video>
             </div>
             
             <div className="relative z-10 flex items-center justify-center h-full text-center">
@@ -27,7 +25,7 @@ function Header() {
                     Fragrance for people who want <span className="font-light italic">more style</span> and <span className="font-light italic">mood reflection.</span>
                 </h1>
             </div>
-            </div>
+        </div>
         
     )
 }
